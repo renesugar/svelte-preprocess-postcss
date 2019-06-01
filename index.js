@@ -15,7 +15,7 @@ module.exports = (context = {}) => {
 	}
 }
 
-function process(plugins, css) {
+function process(plugins, css, filename) {
 	return postcss(plugins)
 		.process(css, {
 			from: filename,
